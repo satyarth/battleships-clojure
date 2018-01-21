@@ -1,36 +1,22 @@
-# battleships
+# Battleships game
 
-FIXME: description
+Game state:
 
-## Installation
+* Ship positions
+	* Think of format
+* Player moves
 
-Download from http://example.com/FIXME.
+Iterate by rerunning the game over the above lists everytime a player moves?
 
-## Usage
+Then we have a gameloop which runs the game function on updated versions of the above lists everytime a player moves.
 
-FIXME: explanation
-
-    $ java -jar battleships-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2018 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+##############
+#            #
+#   00X00    # 0 - Player ship (full health)
+#           *# X - Player ship (hit)
+#        0   # * - Enemy shot (miss)
+#  0000  X   # ~ - Sunk ship (player)
+#        0   #
+#          ~ #
+#          ~ #
+##############
